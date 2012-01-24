@@ -1,0 +1,11 @@
+<% if @companies %>
+  <h1>Your Basecamp Accounts</h1>
+  <p>Listed below are your accounts associated with your Basecamp credentials.</p>
+  <% @companies['accounts'].each do |company| %>
+    <p><a href="<%= company['href'] %>" target="_blank"><%= company['name'] %></a></p>
+  <% end %>
+<% else %>
+  <h1>Authenticate to Basecamp</h1>
+  <p>Click the link below to authenticate with Basecamp.</p>
+  <p><a href="/auth/basecamp">Authenticate with Basecamp</a></p>
+<% end %>
