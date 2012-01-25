@@ -2,8 +2,17 @@
 <html>
 <head>
   <title>Basecamp Authentication</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-  <%= yield %>
+  <div id="container">
+    
+    <%= yield %>
+    
+    <div id="footer">
+      <p>Running Sinatra <%= Sinatra::VERSION %></p>
+    </div>
+  
+  </div> 
 </body>
 </html>

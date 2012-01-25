@@ -4,6 +4,7 @@
   <% @companies['accounts'].each do |company| %>
     <p><a href="<%= company['href'] %>" target="_blank"><%= company['name'] %></a></p>
   <% end %>
+  <p>Token expires in <%= @token.expires_in / 60 / 60 / 24 %> days, on <%= Time.at(@token.expires_at) %></p>
 <% else %>
   <h1>Authenticate to Basecamp</h1>
   <p>Click the link below to authenticate with Basecamp.</p>
