@@ -1,8 +1,7 @@
-Simple Basecamp Authentication Example
-======================================
+== Simple Basecamp Authentication Example
 
-The setup
----------
+
+== The setup
 
 1.  Go to [integrate.37signals.com](https://integrate.37signals.com) and signin.
 2.  Create your new application by filling in the details and noting your client_id, client_secret and callback_url.
